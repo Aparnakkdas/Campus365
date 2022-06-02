@@ -46,12 +46,12 @@ h3{
     color: #0D001A;
     font-weight: bold;
 }
-ul {
+.list {
     list-style: none;
     padding-left: 5px;
   }
   
-  ul li:before {
+  .list li:before {
     
     content: '✓  ';
     color: #400082;
@@ -94,3 +94,44 @@ ul {
       float: right;
       
   }
+  .h5carrier{
+      color: #0D001A;
+      font-family: sans-serif;
+      font-size: 22px;
+      margin-bottom: 11px;
+      padding-top: 10px;
+      font-weight: bold;
+      text-align: center;
+      
+  }
+  .imgcarrier{
+    border-radius: 12px;
+    
+       
+  }
+  p{
+      text-align: center;
+      width: auto;
+  }
+  .h5admission{
+    color: #0D001A;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .imgadmi{
+    border-radius: 12px;
+    
+    
+  }
+ .imgdisc{
+    border-radius: 12px;
+     }
+.h5discount{
+    color: #0D001A;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
