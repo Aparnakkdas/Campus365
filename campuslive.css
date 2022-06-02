@@ -20,10 +20,14 @@ section{
    
 }
 h6{
-   font-size: 20px;
+   font-size: 16px ;
    position: relative;
    margin: 10px;
    text-align: center;
+   font-family: sans-serif;
+   color: #400082;
+   padding-left: 90px;
+   
    
 }
 h6:before{
@@ -37,3 +41,56 @@ h6:before{
     left: 0;
     
 }
+h3{
+    font: 30px Poppins sans-serif;
+    color: #0D001A;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  
+  ul li:before {
+    
+    content: '✓  ';
+    color: #400082;
+    
+  }
+  li{
+      color: #555555;
+      margin-bottom:16px;
+      font-family: sans-serif;
+      font-weight: bold;
+  }
+  .Readbutton{
+    background: #001C77;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding-right:40px;
+    border-radius: 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    height: 54px;
+    font-weight: 700;
+    border: 2px solid #400082;
+
+  }
+  .Readbutton:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #e50027;
+
+  }
+  img:hover{
+      opacity:0.9;
+      transition: 0.3s;
+  }
+  .imgfluid{
+      width: 400px;
+      border-radius: 12px;
+      float: right;
+      
+  }
