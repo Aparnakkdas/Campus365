@@ -1,0 +1,48 @@
+
+
+.h-img{
+    height: 40px;
+    position: absolute; 
+    top: 5px;
+    left: 100px;
+}
+.navbar{
+    float: right;
+
+}
+header{
+    box-shadow: 0px 2px 5px #777;
+    height:50px;
+     z-index: 10; 
+    width: 100%;
+    position: fixed;
+    background-color: #FAF5FF;
+}
+
+contact-h6{
+    font-size: 16px ;
+    position: relative;
+    margin: 10px;
+    
+    font-family: sans-serif;
+    color: #400082;
+    padding-left:70px;
+  
+    
+ }
+ h6:before{
+    content: "";
+    width: 55px;
+    height: 1px;
+    display: block;
+    background:red;
+    position: absolute;
+    top:40%;
+    left: 0;
+ }
+ h3-contact{
+     font-size: 30px;
+     line-height: 40px;
+     font-weight: 700;
+     
+ }

@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusLive365</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="campuslive.css" type="text/css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <!-- Add the slick-theme.css if you want default styling -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+      <!-- Add the slick-theme.css if you want default styling -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+      
+      
+      <script src="main.js"></script>
+      <script  src="category.js"></script>
 </head>
 <body>
     <header>
@@ -19,34 +29,42 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="about.html">ABOUT <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">SERVICE</a>
+                      <a class="nav-link" href="service.html">SERVICE</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        COURSES
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="courses">
+                     
+                        
+                        <!-- <a class="dropdown-item" href="category.html">ENGINEERING COURSES</a>
+                        <a class="dropdown-item" href="#">SCIENCE COURSES</a>
+                        <a class="dropdown-item" href="#">ALLIED SCIENCE COURSES</a>
+                        <a class="dropdown-item" href="#">ARTS COURSES</a>
+                        <a class="dropdown-item" href="#">LAW COURSES</a>
+                        <a class="dropdown-item" href="#">MANAGEMENT COURSES</a>
+                        <a class="dropdown-item" href="#">MEDICAL COURSES</a>
+                        <a class="dropdown-item" href="#">PARA MEDICAL COURSES</a>
+                        <a class="dropdown-item" href="#">OTHER COURSES</a> -->
                       </div>
+
+
+                      
                     </li>  <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          COLLEGES
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="state">
+                          <!-- <a class="dropdown-item" href="state.html">COLLEGE IN KERALA</a> -->
                         </div>
+                         
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#">CONTACT</a>
+                      <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                   </ul>
                   
@@ -57,7 +75,7 @@
                 
             </div>  
        </header>
-       <section>
+       <section class="c1"> 
          <div class="container">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -198,27 +216,179 @@
            </div>
           </div>
           </div>
+        </section>
+            <!----------------- Our courses ----------------------------->
+        <section class="bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h6 class="h6_offer">What we offer</h6><br>
+              <h3 class="h_course">Our Courses.</h3>
+              <div class="slider" id="carousel1">
+                <!-- <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5 class="courseslider"></h5>
+                </div>
+                <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5></h5>
+                </div>
+                <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5></h5>
+                </div>
+                <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5></h5>
+                </div>
+                <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5></h5>
+                </div>
+                <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                  <h5></h5>
+                </div> -->
+              </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h6 class="h6_offer">Where You want to study.</h6><br>
+                <h3 class="h_course">Our Colleges.</h3>
+                <div class="slider1" id="carousel2">
+                  <!-- <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5 class="courseslider">hai</h5>
+                  </div>
+                  <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5 class="headeritems">hai</h5>
+                  </div>
+                  <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5></h5>
+                  </div>
+                  <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5></h5>
+                  </div>
+                  <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5></h5>
+                  </div>
+                  <div class="items"><img src="https://campuslive365.com/assets/photos/default-campus-live-course.jpg" alt="">
+                    <h5></h5>
+                  </div> -->
+                </div>
 
-      </section>
-      <section class="bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
+              </div>
 
             </div>
 
           </div>
+        </section>
+        <section class="overlapsession1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div>
+                   <img src="img/bannerimg.jpg" style=width:100% alt="">
+                   <div class="centered">
+                     <h3 class="mytitle">Be the change you want to see in your career with Campus Live!</h3>
+                     <p class="mytitile-para">"Education is the most powerful weapon which you can use to change the world. "</p>
+                     <p class="mytitile-para2"> - Nelson Mandela</p>
+                    </div>
+                  </div>
+                  </div>
 
-        </div>
+            </div>
 
-      </section>
+          </div>
+        </section>
+        <!-- Overlapping Session -->
+        <section class="overlapsession2">
+          <div class="container-fluid"; >
+            <div class="row">
+              <div class="col-md-8 " style="max-height:100%;">
+                <h5 class="form-header">Get A Free Consultation About Fee, Courses and Colleges</h5>
+                <form class="userdetailsform">
+                  <div>
+                    <input type="text" placeholder="Full Name * " name="name" id="name" required><br><br>
+                    <input type="number" placeholder="Phone Number * " name="pnumber" id="pnumber" required><br><br>
+                    <input type="text" placeholder="Course * " name="pnumber" id="course" required><br><br>
+                    <select name="Choose Conseltent" class="choose">
+                      <option value="Choose Conseltent">Choose Conseltent(optional)</option>
+                       <option value="abi">Abi</option>
+                       <option value="abi">Arun</option>
 
-  
-   </script> -->
-    
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary submit my-3" disabled="">Get a Free Consultation</button>
+                </form>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+              </div>
+              
+              <div class="col-md-4" style="margin-top:-130px;padding-top:-150px;">
+                <img src="https://campuslive365.com/assets/images/enquiry.jpg" alt="" style="width:310px"> 
+
+              </div>
+            
+            </div>
+          </div>
+        </section>
+        <footer class="bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://campuslive365.com/assets/images/campus-live-logo.png" alt="logo" class="h-img1"></a><br><br><br>
+                <p class="imgpara">We Campus Live, Assist and Guide You To Choose The Best Career Option And Transforms Your Dreams Into Reality!</p>
+                <h3 _ngcontent-serverapp-c35="" class="title">Catch on Social</h3>
+              </div>
+              
+              <div class="col-md-6">
+                <ul>
+                  <li class="color"> <p class="add1">149, 8th Street <br> Crosscut Rd, Gandhipuram <br><strong>Coimbatore, Tamil Nadu, India- 641012</strong></p></li>
+                  <li  class="color"><p class="add1">First Floor, Marigold Building,Thekkekara<br>Road, Near Metro Hospital, Irinjalakuda,<b>Thrissur, Kerala, India - 680121</b></p></li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          
+          
+        </footer>
+        <footer class="footer1" style="background-color:blue;width: 100%;">
+          <p class="footer-para">© 2021 Campus Live Educational Services. All rights reserved | Design by <a href="https://codeappan.com" target="_blank" rel="noopener"> codeappan.</a><span>Back to top ↑</span></p>
+        </footer>
+
+ 
+   </script> 
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="myscript.js"></script>
+<script type="text/javascript">
+ $('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+   dots: true,
+  infinite: true,
+   draggable:true,
+});
+	
+</script>
+<script type="text/javascript">
+  $('.slider1').slick({
+   
+   slidesToShow: 3,
+   slidesToScroll: 3,
+    dots: true,
+   infinite: true,
+    draggable:true,
+ });
+   
+ </script>
+
+   
+   
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

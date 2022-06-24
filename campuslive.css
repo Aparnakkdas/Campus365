@@ -1,23 +1,30 @@
+
+
 .h-img{
-    height: 55px;
+    height: 40px;
     position: absolute; 
     top: 5px;
     left: 100px;
 }
 .navbar{
     float: right;
-   
+
 }
 header{
     box-shadow: 0px 2px 5px #777;
-    height:70px;
+    height:50px;
+     z-index: 10; 
+    width: 100%;
+    position: fixed;
+    background-color: #FAF5FF;
 }
+
+
+
 section{
     
     padding: 15px;
     width: 100%;
-   
-   
 }
 h6{
    font-size: 16px ;
@@ -26,13 +33,23 @@ h6{
    text-align: center;
    font-family: sans-serif;
    color: #400082;
-   padding-left: 90px;
+   padding-left:70px;
    
    
 }
+.h6_offer{
+    font-size: 16px ;
+   position: absolute;
+   margin: 10px;
+   text-align: left;
+   font-family: sans-serif;
+   color: #400082;
+   padding-left: 70px;
+   font-weight: bold;
+}
 h6:before{
     content: "";
-    width: 120px;
+    width: 55px;
     height: 1px;
     display: block;
     background:red;
@@ -135,3 +152,243 @@ h3{
     font-weight: bold;
     text-align: center;
 }
+.h_course{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.slider{
+  display: flex;
+}
+
+.slider .items{
+  height: 250px;
+  width: 350px;
+  margin:30px;
+  
+}
+.slider .items img{
+  height: 250px;
+  width: 350px;
+  
+
+}
+
+.headeritems{
+  text-align: center;
+}
+
+
+.slider1{
+  display: flex;
+}
+
+.slider1 .items{
+  height: 250px;
+  width: 350px;
+  margin:30px;
+  
+}
+.slider1 .items img{
+  height: 200px;
+  width: 350px;
+  border-radius: 15px;
+
+}
+.courseslider{
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+}
+.mytitle{
+font-size: 40px;
+line-height: 40px;
+color: #FFFFFF;
+text-align: center;
+font-weight: bolder;
+
+}
+.mytitile-para{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.mytitile-para2{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  
+}
+.overlapsession1{
+  padding: 20px 20px 100px 20px;
+  
+  position: relative;
+  margin-top: 10px;
+  padding: 4em 0;
+  z-index: -4; 
+  
+ 
+}
+.overlapsession2{
+  background-color:beige;
+  max-width: 70%;
+  max-height: 500px;
+  padding: 200px;
+  margin: 0 auto;
+  margin-top: -160px;
+  z-index: 50;
+}
+.form-header{
+  font-size: 20px;
+  font-weight:500;
+  /* line-height: 35px; */
+  /* margin:0 auto; */
+  margin-top: -10px;
+  
+}
+.col-md-8 {
+  background-color:transparent;
+  
+   padding:  10px 100px 20px; 
+  position:absolute; 
+  display:inline-block;
+  margin-left: -150px;
+  margin-top: -130px;
+
+}
+input{
+  background: #FAF5FF;
+  height: 30px;
+  outline: none;
+  width: 80%;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: 2px solid #dedede;
+  color: #555;
+  box-shadow: none;
+  font-family: sans-serif;
+  border-radius: 7px;
+
+}
+.choose{
+  background: #FAF5FF;
+  height: 40px;
+  outline: none;
+  width: 80%;
+  font-size: 15px;
+  padding: 10px 16px;
+  border: 2px solid #dedede;
+  color: #555;
+  box-shadow: none;
+  font-family: sans-serif;
+  border-radius: 7px;
+
+}
+.userdetailsform .btn {
+  font-size: 20px;
+  padding: 10px 18px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.userdetailsform .btn:hover{
+  background-color: crimson;
+}
+
+.imgpara{
+  /* padding-right: 25px;
+  padding-left: 25px;
+  margin: 0 auto;
+  color: #555;
+  font-family: sans-serif;
+  font-weight: 400; */
+  text-align: left;
+
+}
+.h-img1{display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55px;
+  position: absolute; 
+  top: 5px;
+}
+.title{
+     text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+   
+}
+
+.add1{
+text-align: left;
+ 
+}
+.footer-para{
+  color: #dedede;
+}
+
+/* About page */
+.image-fluid{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  border-radius: 6px;
+}
+.abouth3{
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 700;
+}
+.aboutpara{
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  color: #555;
+}
+/* Contact us css */
+.h5contact{
+  /* margin-left: -50px; */
+  margin: 0 0 24px;
+}
+.add1contact{
+  text-align: left;
+}
+
+.contactadd1{
+  text-align: left;
+  margin: 0 0 16px;
+   
+  }
+  .msg{
+    color: #e50027;
+    font-weight: bolder;
+  }
+
+  /* Engineering CSs */
+  .engieering-h3{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .para-engineering{
+    text-align: left;
+    color: #555;
+
+  }
